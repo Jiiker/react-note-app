@@ -1,3 +1,17 @@
 .header {
+  display: flex;
+  justify-content: space-between;
   font-size: 20px;
+}
+
+.memo-editor {
+  z-index: 1200;
+  width: 50vw;
+  margin: auto;
+
+  position: fixed;
+}
+
+.create-btn {
+  float: right;
 }

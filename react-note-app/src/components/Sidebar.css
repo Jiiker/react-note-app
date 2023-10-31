@@ -1,11 +1,7 @@
 .sidebar {
   background-color: lightyellow;
   width: 200px;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  height: 100vh;
 }
 
 .sidebar-wrap {
