@@ -2,6 +2,8 @@
   background-color: lightyellow;
   width: 200px;
   height: 100vh;
+
+  display: flex;
 }
 
 .sidebar-wrap {
@@ -20,4 +22,39 @@
   font-weight: bold;
   display: flex;
   align-items: center;
+}
+
+.edit-note-module {
+  z-index: 1200;
+  background-color: skyblue;
+  width: 300px;
+  height: 400px;
+  margin: auto;
+
+  position: fixed;
+  top: 150px;
+  left: 300px;
+}
+
+.edit-note-module-exit-btn {
+  float: right;
+}
+
+.edit-note-module-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.edit-note-module-lists {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-note-module-newtag-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 100px;
 }

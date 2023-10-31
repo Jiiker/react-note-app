@@ -7,8 +7,6 @@ function Mytags() {
   const dispatch = useAppDispatch();
   const tagsList = useAppSelector((state) => state.tags);
 
-  console.log(tagsList);
-
   return (
     <div>
       {tagsList?.map(({ tag, id }) => (

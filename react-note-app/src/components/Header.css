@@ -5,13 +5,20 @@
 }
 
 .memo-editor {
+  background-color: bisque;
   z-index: 1200;
-  width: 50vw;
+  width: 600px;
   margin: auto;
 
   position: fixed;
+  right: 20vw;
+  top: 10vh;
 }
 
-.create-btn {
+.memo-editor-exit-btn {
+  float: right;
+}
+
+.memo-editor-create-btn {
   float: right;
 }

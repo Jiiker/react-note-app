@@ -11,11 +11,11 @@ function Header() {
 
   const myColors = [
     "purple",
-    "#785412",
-    "#452632",
-    "#856325",
-    "#963254",
-    "#254563",
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "black",
     "white",
   ];
   const modules = {
@@ -59,18 +59,19 @@ function Header() {
       </div>
       {isEditing ? (
         <form className='memo-editor'>
+          <button
+            className='memo-editor-exit-btn'
+            onClick={() => dispatch(onOffEditing(false))}
+          >
+            x
+          </button>
           <ReactQuill
             theme='snow'
             modules={modules}
             formats={formats}
             value=''
           />
-          <button
-            className='create-btn'
-            onClick={() => dispatch(onOffEditing(false))}
-          >
-            Create
-          </button>
+          <button className='memo-editor-create-btn'>Create</button>
         </form>
       ) : null}
     </div>
