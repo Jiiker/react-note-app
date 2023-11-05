@@ -1,0 +1,37 @@
+.mainpage {
+  padding-top: 30px;
+}
+
+.allnotes-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-box {
+  position: relative;
+  background-color: #fff99e;
+  width: 300px;
+  height: 250px;
+  margin-right: 20px;
+}
+.note-pin {
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.note-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note-tag {
+  position: absolute;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+}

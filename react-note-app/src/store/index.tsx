@@ -3,6 +3,7 @@ import tagsReducer from "./tags/tagsSlice";
 import selectedTagReducer from "./selectedTag/selectedTagSlice";
 import isEditingReducer from "./isEditing/isEditingSlice";
 import editNoteTagReducer from "./editNote/editNoteTagSlice";
+import notesReducer from "./notes/notesSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,6 +11,7 @@ export const store = configureStore({
     selectedTag: selectedTagReducer,
     isEditing: isEditingReducer,
     isEditingNoteTag: editNoteTagReducer,
+    notes: notesReducer,
   },
 });
 

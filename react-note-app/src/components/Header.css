@@ -2,11 +2,21 @@
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  font-weight: bold;
 }
 
-.memo-editor {
-  background-color: bisque;
+.memo-editor-modal-background {
+  background-color: rgba(76, 76, 76, 0.7);
   z-index: 1200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.memo-editor-modal {
+  background-color: bisque;
   width: 600px;
   margin: auto;
 
@@ -21,4 +31,49 @@
 
 .memo-editor-create-btn {
   float: right;
+}
+
+.ql-editor {
+  height: 300px !important;
+}
+
+.memo-editor-title-box {
+  display: flex;
+}
+
+.memo-editor-options-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.memo-editor-options-color {
+  display: flex;
+}
+
+.memo-editor-options-priority {
+  display: flex;
+}
+
+.select-tag-modal-background {
+  background-color: rgba(76, 76, 76, 0.7);
+  z-index: 1200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.select-tag-modal {
+  background-color: white;
+  width: 200px;
+  min-height: 250px;
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+}
+
+.select-tag-modal-title {
+  text-align: center;
+  font-weight: bold;
 }

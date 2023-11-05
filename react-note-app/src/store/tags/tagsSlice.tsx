@@ -12,7 +12,8 @@ const tagsSlice = createSlice({
       state.push({ tag: action.payload, id: v4() });
     },
     delList: (state, action) => {
-      state.filter((list) => list.id !== action.payload);
+      state = state.filter((list) => list.id !== action.payload);
+      return state;
     },
   },
 });
