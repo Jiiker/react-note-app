@@ -1,0 +1,39 @@
+.trashpage {
+  padding-top: 30px;
+}
+
+.trashnote-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trash-note-box {
+  position: relative;
+  background-color: #fff99e;
+  width: 300px;
+  height: 250px;
+  margin-right: 20px;
+}
+
+.trash-note-tags {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trash-note-tag {
+  background-color: #ccc;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+}
+
+.trash-note-btns {
+  display: flex;
+  column-gap: 10px;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}

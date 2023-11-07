@@ -22,16 +22,107 @@
 }
 
 .note-tags {
+  position: absolute;
+  bottom: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
 .note-tag {
-  position: absolute;
-  bottom: 0;
   background-color: #ccc;
   border-radius: 5px;
   padding-left: 5px;
   padding-right: 5px;
   margin: 5px;
+}
+
+.note-btns {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  display: flex;
+}
+
+.note-btn {
+  padding-right: 10px;
+}
+
+.modifying-modal {
+  background-color: rgba(76, 76, 76, 0.7);
+  z-index: 1200;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.modifying-editor-modal {
+  background-color: bisque;
+  width: 600px;
+  margin: auto;
+
+  position: fixed;
+  right: 20vw;
+  top: 10vh;
+}
+
+.modifying-editor-exit-btn {
+  float: right;
+}
+
+.modifying-editor-options-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.select-tag-modal-background {
+  background-color: rgba(76, 76, 76, 0.7);
+  z-index: 1200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.select-tag-modal {
+  background-color: white;
+  width: 200px;
+  min-height: 250px;
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+}
+
+.select-tag-modal-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.edit-tag-modal-background {
+  background-color: rgba(76, 76, 76, 0.7);
+  z-index: 1200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.edit-tag-modal-exit-btn {
+  float: right;
+}
+
+.edit-tag-modal-lists {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-tag-modal-fin-btn {
+  width: 50px;
+  margin: auto;
+  display: block;
 }

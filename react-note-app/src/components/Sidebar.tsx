@@ -7,6 +7,7 @@ import Mytags from "./Mytags";
 import { onOffEditingNoteTag } from "../store/editNote/editNoteTagSlice";
 import { useState } from "react";
 import { addList, delList } from "../store/tags/tagsSlice";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [creatNewTag, setCreateNewTag] = useState(false);
@@ -22,13 +23,15 @@ function Sidebar() {
     <div className='sidebar'>
       <div className='sidebar-wrap'>
         <div className='sidebar-title'>Keep</div>
-        <div
-          className='sidebar-tag'
-          onClick={() => dispatch(clickTag("Notes"))}
-        >
-          <FaLightbulb />
-          <div>&nbsp;&nbsp;&nbsp;Notes</div>
-        </div>
+        <Link to='/'>
+          <div
+            className='sidebar-tag'
+            onClick={() => dispatch(clickTag("Notes"))}
+          >
+            <FaLightbulb />
+            <div>&nbsp;&nbsp;&nbsp;Notes</div>
+          </div>
+        </Link>
         <Mytags />
         &nbsp;
         <div
@@ -38,20 +41,24 @@ function Sidebar() {
           <MdEdit />
           <div>&nbsp;&nbsp;&nbsp;Edit Notes</div>
         </div>
-        <div
-          className='sidebar-tag'
-          onClick={() => dispatch(clickTag("Archive"))}
-        >
-          <FaArchive />
-          <div>&nbsp;&nbsp;&nbsp;Archive</div>
-        </div>
-        <div
-          className='sidebar-tag'
-          onClick={() => dispatch(clickTag("Trash"))}
-        >
-          <FaTrash />
-          <div>&nbsp;&nbsp;&nbsp;Trash</div>
-        </div>
+        <Link to='/archive'>
+          <div
+            className='sidebar-tag'
+            onClick={() => dispatch(clickTag("Archive"))}
+          >
+            <FaArchive />
+            <div>&nbsp;&nbsp;&nbsp;Archive</div>
+          </div>
+        </Link>
+        <Link to='/trash'>
+          <div
+            className='sidebar-tag'
+            onClick={() => dispatch(clickTag("Trash"))}
+          >
+            <FaTrash />
+            <div>&nbsp;&nbsp;&nbsp;Trash</div>
+          </div>
+        </Link>
       </div>
       {editNote ? (
         <div className='edit-note-modal-background'>
@@ -62,7 +69,7 @@ function Sidebar() {
             >
               x
             </button>
-            <div className='edit-note-modal-title'>Note Tags</div>
+            <div className='edit-note-modal-title'>태그 목록</div>
             {tagsList?.map(({ tag, id }) => (
               <li className='edit-note-modal-lists' key={id}>
                 <div className='edit-note-modal-tags'>- {tag}</div>
@@ -97,7 +104,7 @@ function Sidebar() {
               className='edit-note-modal-newtag-btn'
               onClick={() => setCreateNewTag(true)}
             >
-              New tag
+              태그 추가
             </button>
           </div>
         </div>
