@@ -26,6 +26,7 @@
 
 ## [헤더]
 ![header](https://github.com/Jiiker/react-note-app/assets/100774811/8d2129e2-3fc3-402c-99da-b78a5ede3c2d)
+- 태그 클릭시 헤더의 title도 태그 이름으로 변경.
 - '+' 버튼을 눌렀을 때 노트 생성 모달 구현.
 - react-quill을 이용해서 에디터 만들기.
 - 노트 생성 모달 안에 '태그 추가' 클릭시 태그 추가하는 모달 구현.
